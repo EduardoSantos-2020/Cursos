@@ -1,0 +1,41 @@
+
+body{
+background-color:#d3d3d3;
+font-family: 'Open Sans', sans-serif;
+}
+
+.contabilidade{
+padding: 20px;
+}
+
+.coluna-1{
+margin: 10px;
+display: inline-block;
+}
+.coluna-1 label{
+font-size: 20px;
+font-weight: bolder;
+}
+
+.coluna-1 input{
+border: solid 2px #000;
+border-radius: 3px;
+}
+
+.coluna-2{
+margin: 10px;
+display: inline-block;
+font-weight: bolder;
+}
+
+.txt{
+display: inline-block;
+font-weight: bolder;
+font-size:20px;
+margin: 0%;
+}
+
+.resulfinal{
+    display: inline-block;
+    left: 0%;
+}

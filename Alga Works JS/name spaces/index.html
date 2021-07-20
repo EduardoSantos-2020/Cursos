@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Estados e Cidades</title>
+    <style>
+        body{
+            margin: 0 20px;
+        }
+
+        .painel-header{
+            margin: 20px 0;
+        }
+
+        .estados,.cidades{
+        margin: 20px 0;
+        }
+
+        .form-grup{
+            display:block;
+            width: 100%;
+            right: 0;
+        } 
+        .col-x-3{
+            width: 20%;
+        }
+        
+    </style>
+</head>
+    <body>
+        <div class=painel-painel-defults>
+            <div class=painel-header>Estados e Cidades</div>
+            <div class=painel-body>
+                <div class="row">
+                    <div class="col-x-3">
+                        <div class="form-grup">
+                            <label class="estados">Estados</label>
+                            <select id="combo-estado" class="form-control">
+                                <option value="MG">Minas-Gerais</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-x-3">
+                        <div class="form-grup">
+                            <label class="cidades">Cidades</label>
+                                <select id="combo-cidade" class="form-control"
+                                   disabled="disabled"></option>
+                                </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="name-spaces.js".js></script>
+</html>

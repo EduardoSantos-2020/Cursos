@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+    <head>
+        <meta charset="UTF-8">
+        <title>trabalhando com seletores</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <style>
+           body{
+        padding: 20px;
+    
+            }
+            .estilizar{color:darkturquoise
+
+            }
+
+            th,td{
+            padding-right: 20px ;
+            }
+        </style> 
+    </head>
+    <body>
+        <thead>
+            <table>
+            <tr>
+                <th><input type="checkbox" id="selecao-de-todos-email"></th>
+                <th>Nome</th>
+                <th>E-mail</th>
+            </tr>
+            </table>
+        </thead>
+        <tbody>
+            <table>
+                <tr>
+                    <td><input type="checkbox"class="selecionar-usuarios"></td>
+                    <td>Felipe</td>
+                    <td>felipe@email.com</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="checkbox"class="selecionar-usuarios"></td>
+                    <td>Geovana</td>
+                    <td>geovana@email.com</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td ><input type="checkbox"class="selecionar-usuarios"></td>
+                    <td>Carlos</td>
+                    <td>carlos@email.com</td>
+                </tr>
+            </table>
+        </tbody>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="seleção.js"></script>
+    </body>
+</html>

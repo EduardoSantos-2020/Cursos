@@ -1,0 +1,14 @@
+h1 #titulo{
+    color:red
+}
+#titulo{
+    font-size: 50px;
+}
+p.destaque {
+    color:orangered
+
+}
+p.paragrafo{
+    font-size: 30px;
+    font-family: Georgia;
+}

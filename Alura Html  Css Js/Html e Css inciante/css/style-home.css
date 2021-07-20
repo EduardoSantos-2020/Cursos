@@ -1,0 +1,52 @@
+ 	
+body
+		
+	
+			.titulo-principal{color: brown;padding: 34px;font-size: 45px;padding-top: 40px;
+			}	
+		
+			.principal{background: #FFFFFF
+ 				}
+			
+ 				.titulo-centralizadop1{font-size: 40px;text-align:center
+				}				
+				
+			
+				strong{color:black}
+
+
+				p{text-align:center; padding: 20px;font-size:20px
+				  }
+
+		   		em{color:black;font-size: 22px
+		   		}
+		   		  
+		             #missao{ font-kerning:25px;color:red;font-size: 25px
+					        }
+
+            	.itens{font-style:italic;color:#FFFFFF;
+            	}
+					
+
+				.titulo-centralizadop2{text-align:center;font-variant: 20%;color:#FF6666;
+				}
+				
+				ul{display:inline-block;width: 20%;vertical-align:top;margin-right:10%;font-size:30
+				} 
+
+				li{margin: 0 0 20px
+				}
+
+
+				.beneficios{padding: 20px;font-size: 30px
+				}
+
+				.imgbe{width: 60%;
+				}	
+
+
+
+					
+
+
+
