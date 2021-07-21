@@ -1,0 +1,13 @@
+
+/* article .missao > strong{
+    color:green
+} */
+
+/* article > .introducao > strong{
+    color:red
+} */
+
+article .missao ,.introducao > strong{
+    color: red;
+
+}

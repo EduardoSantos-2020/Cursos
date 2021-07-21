@@ -1,0 +1,16 @@
+.nome{
+ color:#f00;
+/* font-family:"trebuchet ms", sans-serif;
+font-size: 24px;
+text-decoration: underline;
+font-style: italic;
+font-weight: bold;
+text-align:left; */
+
+font:italic bold 24px "trebuchet ms" , sans-serif;
+text-decoration: underline;
+text-align: left;
+}
+.seguimento{
+font-family:"Palatino",serif;
+}
