@@ -66,7 +66,8 @@ border-radius: 10px}
 
 .preço{ font-size: 22px;font-weight: bold;margin-top: 10px
 }
-footer{ background:url(bg.jpg);
+footer{
+	background:url(./img/bg.jpg);
 	text-align: center;
 	padding: 40px
 }
