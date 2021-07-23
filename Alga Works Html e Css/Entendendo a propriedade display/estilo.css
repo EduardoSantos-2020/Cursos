@@ -1,0 +1,44 @@
+body{
+    font-size: 30px;
+}
+.nome-empresa{
+background-color:pink;
+font-size: 30px;
+}
+.segmento-empresa{
+    background-color:red;
+    
+}
+.curso-html{
+    background-color:#00dd00;
+    
+}
+.curso-css{
+
+    background-color:#fdff11;
+   
+}
+.curso-java{
+    background-color:#00dddd;
+  
+}
+.curso-bootstrap{
+    background-color:#ee00da;
+}
+
+.nome-empresa ,.segmento-empresa{
+    display: block;
+    height: 100px;
+    width: 300px;
+    font-size: 40px;
+}
+.curso-html,.curso-css{
+    display: inline;/*Não contem espaços de altura e largura*/
+    height: 100px;
+    width: 300px;
+}
+.curso-java,.curso-bootstrap{
+    display: inline-block; /*Contem espaços de altura e largura*/
+    height: 100px;
+    width: 300px;
+}

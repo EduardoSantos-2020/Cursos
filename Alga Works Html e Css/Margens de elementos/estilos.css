@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    font-size: 32px;
+}
+.frase1,.frase2{
+    width: 500px;
+    text-align: justify;
+    border:3px solid red;
+    background-color:yellow;
+    padding:20px;
+};
+
+p{
+    margin:0;
+}
+.frase1{
+    /* margin-top:-100px; */
+    margin: 10px 0px 100px 50px;
+
+};
+.frase2{
+    margin: 0 auto;
+}
