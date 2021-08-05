@@ -2,4 +2,4 @@
 
 - Iniciando o estudo 
 - Comesando a inplementar conceitos HTML e Css3
-- Comesando a dar os primeiros passo e Java Script  
+- Comesando a dar os primeiros passos em JavaScript  
