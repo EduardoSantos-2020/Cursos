@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+html{
+    font-size: 62.5% /* 10 / 16 x 100 = 62.5 = 10px em realção ao navegador*/;
+}
+.container{
+    width: 1000px;
+}
+.caixa{
+    width: 50%;
+    padding: 10%;
+    font-size: 200% /* 20px */;
+    background-color: #ccc;
+    border: solid 5px black;
+}
+
+h1{
+  font-size: 250% /* 50px */;
+}
+
+p{
+    font-size:150% /* 30px */;
+}
