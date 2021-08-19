@@ -12,16 +12,12 @@ header{
    
 }
 header img{
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
-.container{
-    width: 100%;
-   margin: 0 auto;
-  padding: 0 20px;
-}
+
 #planos{
-    padding: 80px 20px;
+    padding: 80px 0 ;
    
 }
 #planos::after{
@@ -34,19 +30,6 @@ article{
     padding:10px;
     border:solid 2px #95a4a5;
     
-}
-@media only screen and (min-width:600px) { 
-    article{
-     width:30%;
-    float:left;
-    margin-right:5%;
-    }
-}
-
-@media only screen and (max-width:450px) {
-    article{
-        background-color: blue;
-    }
 }
 
 
