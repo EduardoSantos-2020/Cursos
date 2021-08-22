@@ -6,16 +6,16 @@ body{
     color:orange;
 }
 
- #titulo {
+
+#titulo/*valor 100*/ {
 color: red; 
 }
- /*valor 100*/
 
-.cabecario, h1 ,header{
+.cabecario, h1 ,header/*valor 011*/{
     color: blue;
-}/*valor 011*/
+}
 
 
- header ,#titulo ,.cabecario, h1{
+ header ,#titulo ,.cabecario, h1 /*valor 112*/{
 color: yellow;
-}  /*valor 112*/
+} 
