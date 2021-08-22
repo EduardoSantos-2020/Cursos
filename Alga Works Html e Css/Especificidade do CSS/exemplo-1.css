@@ -1,0 +1,14 @@
+body{
+    font-size: 23px;
+}
+
+h1 /*valor 001*/{
+    color: blue;
+}
+h1#logo /*valor 011*/{
+    color: green;
+} 
+
+#logo /*valor 010*/{
+    color: blueviolet;
+}

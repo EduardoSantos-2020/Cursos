@@ -1,0 +1,21 @@
+body{
+    font-size: 23px;
+}
+
+ header /*valor 001*/ { 
+    color:orange;
+}
+
+ #titulo {
+color: red; 
+}
+ /*valor 100*/
+
+.cabecario, h1 ,header{
+    color: blue;
+}/*valor 011*/
+
+
+ header ,#titulo ,.cabecario, h1{
+color: yellow;
+}  /*valor 112*/
