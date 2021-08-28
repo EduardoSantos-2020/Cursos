@@ -1,0 +1,20 @@
+header{
+height: 60px;
+
+border-bottom: solid 1px #ccc;
+}
+
+header img{
+margin-top: 20px;
+}
+
+.plano__layout{
+padding: 80px 0;
+}
+
+.plano__layout::after{
+display: block;
+
+content:"";
+clear:both;
+}

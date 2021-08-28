@@ -1,0 +1,33 @@
+
+ .texto{ 
+    margin-right: 3em;
+    padding: 2em; 
+    border: 1.5em solid black;
+    
+    font-size: 2em ; /* 32px */
+}
+h1{
+    font-size: 2em; /* 64px */
+}
+.texto p{
+    font-size: 2rem; /* 32px com o tamanho de fonte padrão do browser*/ 
+
+}
+
+p span{
+    font-size: 4rem; /* 64px */
+}
+
+.texto{
+font-size: 2rem;
+} 
+
+.comentarios{
+    font-size: 2em; /*32px*/
+
+}
+.comentarios p{
+    font-size:3rem; /*48px*/
+
+}
+

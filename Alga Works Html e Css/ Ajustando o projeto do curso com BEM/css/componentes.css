@@ -1,0 +1,78 @@
+
+/*---------
+PLANO
+---------*/
+
+.plano{
+padding:10px;
+
+border:solid 2px #95a4a5;
+}
+
+.plano__cabecario{
+background-color: #95a4a5;
+margin:-10px;
+margin-bottom: 0;
+line-height: 2.5;
+
+color: #fff;
+text-align: center;
+
+
+font-weight: normal;
+font-size: 28px;
+}
+.plano__preço{
+margin: 20px 0;
+
+text-align: center;
+font-size: 28px;
+}
+.plano__caracteristicas{
+margin:20px 0;
+padding: 0;
+
+text-align: center;
+list-style: none;
+}
+.plano__rodapé{
+text-align: center;
+
+}
+
+/*---------
+BOTÃO
+---------*/
+
+.botão{
+display: inline-block;
+background-color: #127D00;
+padding: 12px 16px;
+
+text-decoration: none;
+color: #fff;
+
+}
+.botão:hover,.botão:focus {
+background-color: #0e6400;
+
+color: #fff;
+text-decoration: none;
+}
+
+.botão--assinar{
+display: inline-block;
+background-color: #127D00; 
+padding: 12px 16px;
+
+
+text-decoration: none;
+color: #fff;
+}
+
+.botão--assinar:hover ,.botão--assinar:focus {
+background-color: #0e6400;
+
+color: #fff;
+text-decoration: none;
+}
