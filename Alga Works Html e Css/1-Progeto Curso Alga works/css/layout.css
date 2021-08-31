@@ -1,0 +1,24 @@
+header{
+height: 60px;
+
+border-bottom: solid 1px #ccc;
+}
+
+header img{
+margin-top: 20px;
+}
+
+.plano__layout{
+padding: 80px 0;
+}
+
+.plano__layout::after{
+display: block;
+
+content:"";
+clear:both;
+}
+.layout__chamada{
+    background-color: #7AB55C;
+    padding: 80px 0;
+}

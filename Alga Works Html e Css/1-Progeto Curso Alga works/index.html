@@ -3,70 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/estilos.css"/>
+        <link rel="stylesheet" href="css/base.css"/>
+        <link rel="stylesheet" href="css/layout.css"/>
+        <link rel="stylesheet" href="css/componentes.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MyPilas</title>
     </head>
+
     <header>
-      <div class="row">
         <div class="container">
-                <img src="/Alga Works Html e Css/1-Progeto Curso Alga works/img/logo.png" width="100" height="35" alt="MyPilas">
-            </div>
-        </header>
+          <img src="img/logo.png" width="100" height="35" alt="MyPilas">
+        </div>
+    </header>
+
         <body>
           <div class="row">
+            <section class="layout__chamada">
+              <div class="container">
+                <div class="chamada">
+                  <h1 class="chamada__titulo">As finanças da sua empresa em ordem</h1>
+                  <p class="chamada__subtitulo">software de gestão simples pratico para pequenos negócios</p>
+                  <div class="chamada__acao">
+                    <a href="#planos" class=" botão botao--principal">Conheça os planos</a>
+                  </div>
+                </div>
+              </div>
+            </section>
             <div class="container">
-              <div id="planos">
+              <div id="planos" class="plano__layout">
+
                 <div class="col-md-4">
-                  <article>
-                      <h2>Autônomo</h2>
-                    <div>R$59/mês</div>
-                      <ul>
+                  <article class="plano">
+                      <h2 class="plano__cabecario">Autônomo</h2>
+                    <div class="plano__preço">R$59/mês</div>
+                      <ul class=plano__caracteristicas>
                           <li>Até <strong>2 usuários</strong></li>
                           <li><strong>500MB</strong> de armazenamento</li>
                           <li>Lançamentos ilimitados</li>
                           <li>Acesso seguro</li>
                           <li>Sem fidelidade</li>
                       </ul>
-                    <footer>
-                      <a class="botão" href="assine.html">Assinar</a>
+                    <footer class="plano__rodapé">
+                      <a class="botão--assinar" href="assine.html">Assinar</a>
                     </footer>
                   </article>
                 </div>
+
                 <div class="col-md-4">
-                  <article>
-                      <h2>Micro</h2>
-                    <div>R$89/mês</div>
-                      <ul>
+                  <article class="plano">
+                      <h2 class="plano__cabecario">Micro</h2>
+                    <div class="plano__preço">R$89/mês</div>
+                      <ul class=plano__caracteristicas>
                           <li>Até <strong>5 usuários</strong></li>
                           <li><strong>1GB</strong> de armazenamento</li>
                           <li>Lançamentos ilimitados</li>
                           <li>Acesso seguro</li>
                           <li>Sem fidelidade</li>
                       </ul>
-                    <footer>
-                      <a class="botão" href="assine.html">Assinar</a>
+                    <footer class="plano__rodapé">
+                      <a class="botão--assinar" href="assine.html">Assinar</a>
                     </footer>
-                  </article>
+                  </article class="plano">
                 </div>
+
                 <div class="col-md-4">
-                  <article>
-                      <h2>Pequena</h2>
-                    <div>R$99/mês</div>
-                      <ul>
+                  <article class="plano">
+                      <h2 class="plano__cabecario">Pequena</h2>
+                    <div class="plano__preço">R$99/mês</div>
+                      <ul class=plano__caracteristicas>
                           <li>Até <strong>10 usuários</strong></li>
                           <li><strong>5GB</strong> de armazenamento</li>
                           <li>Lançamentos ilimitados</li>
                           <li>Acesso seguro</li>
                           <li>Sem fidelidade</li>
                       </ul>
-                    <footer>
-                      <a  class="botão" href="assine.html">Assinar</a>
+                    <footer class="plano__rodapé">
+                      <a class="botão--assinar" href="assine.html">Assinar</a>
                     </footer>
                   </article> 
                 </div>
+
               </div>
             </div>
+
           </div>
     </body>
 </html>
