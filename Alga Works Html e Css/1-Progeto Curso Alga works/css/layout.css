@@ -1,11 +1,19 @@
-header{
+.layout--cabecario{
 height: 60px;
 
 border-bottom: solid 1px #ccc;
+background-color: #fff;
 }
 
-header img{
-margin-top: 20px;
+.layout--cabecario img{
+margin-top:12px;
+}
+.layout-cabecario--home{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; 
 }
 
 .plano__layout{
@@ -18,7 +26,23 @@ display: block;
 content:"";
 clear:both;
 }
+
 .layout__chamada{
-    background-color: #7AB55C;
-    padding: 80px 0;
+padding: 80px 0;
+margin-top: 60px;
+
+background-color: #7AB55C;
+}
+
+.layout__depoimento{
+background-color: #e6e6e6;
+
+padding: 80px 0;
+}
+.layout--rodape{
+background-color:#484848 ;
+
+padding: 40px 0;
+text-align: center;
+color:#fff
 }
