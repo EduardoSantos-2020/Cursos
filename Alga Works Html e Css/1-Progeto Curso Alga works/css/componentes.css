@@ -4,11 +4,30 @@ PLANO
 ---------*/
 
 .plano{
+position: relative;
+
 padding:10px;
 font-size:1.4rem;
 
 border:solid 2px #95a4a5;
 }
+.plano--mais-popular::after{
+top:-10px;
+left:-10px;
+
+position:absolute;
+line-height: 2.5;
+
+font-weight: bolder;
+font-size: 0.7242em;
+padding: 0 10px;
+
+content:"Mais Popular";
+background-color: #c20303;
+color: #fff;
+
+}
+
 
 .plano__cabecalho{
 background-color: #95a4a5;
@@ -112,7 +131,7 @@ CHAMADA
 font-size: 1em;
 
 }
-@media only screen and(min-width:992px){
+@media(min-width:992px){
     .chamada{
         padding-left: 10%;
         padding-right: 10%;
@@ -130,20 +149,33 @@ DEPOIMENTO
     font-size: 2.2rem;
 }
 
-@media only screen and(min-width:992px){
+@media(min-width:992px){
     .depoimento {
-        padding-left: 15%;
+        padding-left:15%;
         padding-right:15%;
 
         font-size: 2.8rem;
     }  
 }
 .depoimento > blockquote{
+    position: relative;
+
     margin:0;
     padding:0 60px;
 
     text-align: center;
     font-size: 1em;
+}
+
+.depoimento > blockquote::before{
+   position: absolute;
+    
+   top:-0.35em;
+   left: 0;
+
+    font-size: 8em;
+    color: #ccc;
+    content: "\201C";
 }
 
 .depoimento__autor{

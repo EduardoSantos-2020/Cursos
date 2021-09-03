@@ -21,28 +21,34 @@ padding: 80px 0;
 }
 
 .plano__layout::after{
-display: block;
-
-content:"";
-clear:both;
+    display: block;
+    
+    content:"";
+    clear:both;
 }
 
-.layout__chamada{
-padding: 80px 0;
-margin-top: 60px;
 
-background-color: #7AB55C;
+.layout__chamada{
+    padding: 80px 0;
+    margin-top:60px;
+    
+    background-color: #7AB55C;
 }
 
 .layout__depoimento{
-background-color: #e6e6e6;
-
-padding: 80px 0;
+    background-color: #e6e6e6;
+    
+    padding: 80px 0;
 }
 .layout--rodape{
-background-color:#484848 ;
-
-padding: 40px 0;
-text-align: center;
-color:#fff
+    background-color:#484848 ;
+    
+    padding: 40px 0;
+    text-align: center;
+    color:#fff
+}
+@media(max-width:749px) {
+    .plano__layout .row > div:not(.ultima-coluna){
+        margin-bottom: 40px;
+    }
 }
