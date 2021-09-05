@@ -1,13 +1,10 @@
 .layout--cabecario{
-height: 60px;
+line-height: 60px;
 
 border-bottom: solid 1px #ccc;
 background-color: #fff;
 }
 
-.layout--cabecario img{
-margin-top:12px;
-}
 .layout-cabecario--home{
     position: fixed;
     top: 0;
@@ -52,3 +49,4 @@ padding: 80px 0;
         margin-bottom: 40px;
     }
 }
+

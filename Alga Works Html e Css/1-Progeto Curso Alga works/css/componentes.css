@@ -65,10 +65,12 @@ BOTÃO
 ---------*/
 
 .botão{
+line-height: normal;
 display: inline-block;
-background-color: #127D00;
+
 padding: 12px 16px;
 
+background-color: #127D00;
 text-decoration: none;
 color: #fff;
 font-size: 1em;
@@ -91,7 +93,8 @@ text-decoration: none;
 color: #fff;
 }
 
-.botão--assinar:hover ,.botão--assinar:focus {
+.botão--assinar:hover ,.botao--login:hover,
+.botao--login:focus,.botão--assinar:focus {
 background-color: #0e6400;
 
 color: #fff;
@@ -101,7 +104,7 @@ text-decoration: none;
 background-color: #004b86;
 border-radius: 10px;
 }
-.botao--principal:hover ,.botao--principal:focus{
+.botao--principal:hover,.botao--principal:focus{
 background-color: #003b6a;
 }
 
@@ -190,3 +193,88 @@ border-radius: 50%;
 .depoimento >p{
     margin-top:10px;
 }
+
+/*---------
+NAVEGAÇÃO
+---------*/
+.navegacao{
+  
+}   
+
+.navegacao__menu{
+position: relative;
+right: 0;
+
+float:right;
+}
+
+/*--------------
+BOTÃO CHAVEADOR
+---------------*/
+
+.botao__chaveador{
+    width: 24px;
+    height: 24px;
+    border: 0;
+
+    outline: none;
+    background: none;
+    background-image: url(../img/bars.png);
+    
+}
+
+@media (min-width:992px){
+    .botao__chaveador{
+        display: none;
+    }
+}
+
+/*---------
+MENU
+---------*/
+.menu{
+margin:0;
+
+font-size: 1.4rem;
+list-style: none;
+
+}
+@media(max-width:991px){
+    .menu{
+        position: fixed;
+        top: 0;
+        left:0;
+        bottom: 0;
+
+        width: 200px;
+        margin:0;
+        padding: 20px;
+        border-right: 1px solid #eee;
+
+        font-size: 1.4rem;
+        background-color: #fbfbfb;
+        list-style: none;
+    }
+
+    .menu__item{
+        display: block;
+
+        line-height: 3;
+    }
+
+    .menu__item--botao{
+        margin-top: 20px;
+    }
+}
+@media(min-width:992px){
+    
+    .menu--item{
+        display: inline-block;
+        padding-right:20px;
+    }
+
+    .menu__item:last-of-type{
+        padding-right:0px;
+    }
+}
+
