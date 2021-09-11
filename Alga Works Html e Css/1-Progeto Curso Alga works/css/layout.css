@@ -1,11 +1,11 @@
-.layout--cabecario{
+.layout--cabecalho{
 line-height: 60px;
 
 border-bottom: solid 1px #ccc;
 background-color: #fff;
 }
 
-.layout-cabecario--home{
+.layout--cabecalho ,.cabecalho--home{
     position: fixed;
     top: 0;
     left: 0;
@@ -47,6 +47,9 @@ padding: 80px 0;
 @media(max-width:749px) {
     .plano__layout .row > div:not(.ultima-coluna){
         margin-bottom: 40px;
+    }
+    .layout__assinar{
+        padding: 40px 0;
     }
 }
 

@@ -76,6 +76,7 @@ color: #fff;
 font-size: 1em;
 
 }
+
 .botão:hover,.botão:focus {
 background-color: #0e6400;
 
@@ -197,9 +198,7 @@ border-radius: 50%;
 /*---------
 NAVEGAÇÃO
 ---------*/
-.navegacao{
-  
-}   
+
 
 .navegacao__menu{
 position: relative;
@@ -229,22 +228,27 @@ BOTÃO CHAVEADOR
     }
 }
 
-/*---------
-MENU
----------*/
+/*---------*\
+    MENU
+/*---------*/
 .menu{
 margin:0;
+
 
 font-size: 1.4rem;
 list-style: none;
 
 }
+
+
 @media(max-width:991px){
     .menu{
         position: fixed;
         top: 0;
         left:0;
         bottom: 0;
+
+        display:none;
 
         width: 200px;
         margin:0;
@@ -255,6 +259,11 @@ list-style: none;
         background-color: #fbfbfb;
         list-style: none;
     }
+    
+    .menu--exibindo{
+    display: block;
+    }
+
 
     .menu__item{
         display: block;
