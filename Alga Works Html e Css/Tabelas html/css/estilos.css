@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.tabela{
+    font-size: 14px;
+ 
+    width: 100%;
+    
+    border-collapse: collapse;
+}
+
+.tabela td,.tabela th{
+    border: 1px solid #ccc;
+
+    
+    padding: 15px 10px;
+    left:0;
+}
+
+.tabela th{
+    background-color: #ececec;
+
+    font-weight: bold;
+    font-size: 1.1em;
+
+    text-align: left;
+}
+
+.tabela tr:nth-child(even){
+    background-color: #f7f7f7
+}
+.tabela tr:hover{
+    background-color: #faffcc;
+}
