@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
      crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -23,10 +23,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="nav-menu">   
                     <ul class="nav navbar-nav">
-                        <li><a href="">Ordem de Serviço</a></li>
-                        <li><a href="">Clientes</a></li>
-                        <li><a href="">Funcionarios</a></li>
-                        <li><a href="">Serviços</a></li>
+                        <li><a href="" data-toggle="tooltip" title="">Ordem de Serviço</a></li>
+                        <li><a href="" data-toggle="tooltip" title="">Clientes</a></li>
+                        <li><a href="" data-toggle="tooltip" title="">Funcionarios</a></li>
+                        <li><a href="" data-toggle="tooltip" title="">Serviços</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -35,13 +35,13 @@
                             <span class="caret"></span>
                             </a>
                             <div class="dropdown-menu perfil">
-                                <div>
-                                    <img src="https://api.adorable.io/avatars/100/watchuru.png">
+                                <div class="col-sm-4 hidden-xs">
+                                    <img class="img-resposive img-rounded" src="https://avatars.dicebear.com/api/adventurer-neutral/:seed.svg">
                                 </div>
-                                <ul class="list-unstyled">
+                                <ul class="list-unstyled col-sm-6">
                                     <li>Usuario</li>
-                                    <li><a href="">Alterar Perfil</a></li>
-                                    <li><a href="">Sair</a></li>
+                                    <li><a href="" data-toggle="tooltip" title="">Alterar Perfil</a></li>
+                                    <li><a href="" data-toggle="tooltip" title="">Sair</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -49,7 +49,115 @@
                 </div>
             </div>
         </nav>
+
+        <div class="container">
+
+            <ol class="breadcrumb">
+                <li><a href="" data-toggle="tooltip" title="">Início</a></li>
+                <li><a href="" data-toggle="tooltip" title="">Ordem de Serviço</a></li>
+                <li class="active"><a href="" data-toggle="tooltip" title="">Pesquisa</a></li>
+            </ol>
+
+            <div class="row cabecalho">
+
+                <div class="col-xs-12 col-md-6">
+                    <h1>Ordem de Serviço</h1>
+                </div>
+
+                <div class="col-xs-12 col-md-4 col-md-offset-2 busca">
+                    <div class="input-group">
+                        <input type="text" name="busca" class="form-control" 
+                        placeholder="Pesquisar por nome do cliente">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-defaut">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-responsive dado-os">
+
+            </div>
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Cod.</th>
+                            <th>Data</th>
+                            <th>Cliente</th>
+                            <th>Valor</th>
+                            <th>Fucionario</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>56788</td>
+                            <td>10/07/2020</td>
+                            <td>Ricardo</td>
+                            <td>R$:200,00</td>
+                            <td>Leandro</td>
+                            <td><span class="label label-primary">Em Andamento</span>
+                            </td>
+                            <td><a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td>56788</td>
+                            <td>10/07/2020</td>
+                            <td>Ricardo</td>
+                            <td>R$:600,00</td>
+                            <td>Leandro</td>
+                            <td><span class="label label-default">Em Andamento</span>
+                            </td>
+                            <td><a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td>56788</td>
+                            <td>10/07/2020</td>
+                            <td>Ricardo</td>
+                            <td>R$:500,00</td>
+                            <td>Leandro</td>
+                            <td><span class="label label-warning">Em Andamento</span>
+                            </td>
+                            <td><a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td>56788</td>
+                            <td>10/07/2020</td>
+                            <td>Ricardo</td>
+                            <td>R$:400,00</td>
+                            <td>Leandro</td>
+                            <td><span class="label label-danger">Em Andamento</span>
+                            </td>
+                            <td><a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td>56788</td>
+                            <td>10/07/2020</td>
+                            <td>Ricardo</td>
+                            <td>R$:900,00</td>
+                            <td>Leandro</td>
+                            <td><span class="label label-success">Em Andamento</span>
+                            </td>
+                            <td><a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a></td>
+                            <td><a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a></td>
+                        </tr>
+                    </tbody>
+                </table> 
+
+        </div>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
