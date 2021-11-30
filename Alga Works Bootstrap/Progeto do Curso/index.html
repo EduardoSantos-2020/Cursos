@@ -55,7 +55,7 @@
             <ol class="breadcrumb">
                 <li><a href="" data-toggle="tooltip" title="">Início</a></li>
                 <li><a href="" data-toggle="tooltip" title="">Ordem de Serviço</a></li>
-                <li class="active"><a href="" data-toggle="tooltip" title="">Pesquisa</a></li>
+                <li class="active">Pesquisa</li>
             </ol>
 
             <div class="row cabecalho">
@@ -77,9 +77,8 @@
                 </div>
 
             </div>
-            <div class="table-responsive dado-os">
 
-            </div>
+            <div class="table-responsive dados-os">
                 <table class="table table-striped table-bordered table-hover">
                     <thead>
                         <tr>
@@ -153,8 +152,87 @@
                             <td><a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a></td>
                         </tr>
                     </tbody>
-                </table> 
+                </table>
+            </div>
 
+            <footer class="row">
+                <div class="col-sm-6">
+                    <button class="btn btn-primary"data-toggle="modal" data-target="#NovaOS">
+                        Nova ordem de serviço
+                    </button>
+                </div>
+                <div class="col-sm-6 paginacao text-right">
+                <ul class="pagination">
+                    <li class="disabled"><a href=""><span>«</span></a></li>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href=""><span>»</span></a></li>
+                </ul>
+                </div>
+            </footer>
+        </div>
+        <div class="modal fade" id="NovaOS">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" data-dismiss="modal" class="close"><span>&times;</span></button>
+                        <h4 class="modal-title">Nova Ordem de Serviço</h4>
+                    </div>
+                    <form>
+                        <div class="alert alert-danger">
+                            <button type="button" data-dismiss="alert" class="close"><span>&times;</span></button>
+                            <b>Erro!</b>Não conferem as informações
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <label>Cod. da OS</label>
+                                    <p class="form-group-static">55467</p>
+                                </div>
+                                <div class="form-group has-success col-sm-5">
+                                    <label class="control-label"for="Clientes">Clentes</label>
+                                    <select id="Clientes" class="form-control">
+                                        <option value="">Selecionar...</option>
+                                        <option value="1">Gerson Carlos</option>
+                                        <option value="2">Tamires Santos</option>
+                                        <option value="3">Lucas Ferreira</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-7 has-warning">
+                                    <label class="control-label" for="Servicos">Serviços</label>
+                                    <select id="Servicos" class="form-control">
+                                        <option value="">Selecionar...</option>
+                                        <option value="1">Ajustar o Hórario</option>
+                                        <option value="2">Conserto interno</option>
+                                        <option value="3">Trocar Bateria</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group has-error col-xs-12"> 
+                                        <label class="control-label " for="observacoes">Observações</label>
+                                        <textarea name="observacoes" id="observacao" class="form-control"rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4 has-success">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">R$</div>
+                                            <input type="text" name="valor" id="valor" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-danger">Limpar</button>
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

@@ -16,6 +16,23 @@ margin-right: 20px;
     margin-bottom: 3px;
 }
 
+
+.cabecalho h1{
+     margin: 0;
+     font-size: 3em;
+}
+
+.busca{
+    margin-top: 12px;
+}
+.dados-os{
+    margin-top: 30px;
+}
+
+.paginacao .pagination{
+margin: 0;
+}
+
 @media(max-width:767px){
     .perfil{
         color:#fff;
@@ -31,15 +48,8 @@ margin-right: 20px;
         text-decoration: none;
         color: #fff;
     }
-}
-.cabecalho h1{
-     margin: 0;
-     font-size: 3em;
-}
-
-.busca{
-    margin-top: 12px;
-}
-.dados-os{
-    margin-top: 20px;
+    .paginacao .pagination{
+        text-align: center;
+        margin: 20px;
+    }
 }
