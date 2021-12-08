@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <title>Criando Carousel</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Criando Carousel</h1>
+
+            <div id="carrosel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carrosel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carrosel" data-slide-to="1"></li>
+                    <li data-target="#carrosel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src='https://unsplash.it/1200/720?random'>        
+                    </div>
+                    <div class="item">
+                        <img src='https://unsplash.it/1199/720?random'>
+                    </div>
+                    <div class="item">
+                        <img src='https://unsplash.it/1198/720?random'>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carrosel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+
+                </a>
+                <a class="right carousel-control" href="#carrosel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+
+                </a>
+            </div>
+        </div>
+    </body>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</html>
