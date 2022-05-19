@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+body{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Ubuntu', sans-serif;
+/* background-color: #CCD1D1; */
+background-color: #FFFF07;
+}
+
+.botao ,.check{
+margin: 5px 5px
+;
+
+}
+
+.containerInput{
+display:flex; 
+margin: 20px;
+align-items: center;
+}
+
+.lista-input{
+border-radius:6px;
+margin-top: 30px;
+height: 50%;
+
+}
+
+
+.Itemcheck input[type='checkbox']:checked + span{
+text-decoration: line-through;
+}
+
+.title{
+text-align: center;
+padding: 15px;
+font-size: 30px;
+border-radius: 7px;
+border: 3px solid #000;
+font-weight: bolder;
+background-color: #fff;
+box-shadow: 2px 2px 3px  #000;
+}
+
+.Itemcheck{
+display:flex;
+border: 2px solid #000;
+background-color: #fff;
+justify-content: space-between;
+padding: 15px ;
+word-break: break-all;
+width: 90%;
+margin: 1em 2em;
+border-radius: 20px; 
+box-shadow: 2px 2px 3px  #000;
+}
+
+.Itemcheck button{
+font-size: 30px;
+width: 40px;
+display: inline-flex;
+border-style: none;
+background: none;
+
+transition: all .5s ease;
+}
+.Itemcheck:hover{
+    background:#000;
+    color: #fff;
+}
+.Itemcheck:hover button{
+    color: #fff;
+}
+
+.Itemcheck button:hover{
+    color: #fe0000;
+    transition: all .5s ease;
+    }
+    
+
+.Itemcheck span{
+font-size: 20px;
+padding: 5px;
+}
+
+
