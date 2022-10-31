@@ -1,21 +1,22 @@
 
     let Banco=[
-        {'tarefa':"Leonardo",'Status':'checked'},
-        {'tarefa':"Eduardo",'Status':''},
-        {'tarefa':"Fernanda",'Status':'checked'}
+        {'tarefa':"Eduardo Santos",'Status':'checked'},
 ]
 const criandoItem=(Text,Status="",indice)=>{
 
     const item=document.createElement('label');
     item.classList.add('Itemcheck');
-    item.innerHTML=` 
-    <div class="form-switch">
-        <input class="check form-check-input" type="checkbox" ${Status} data-indice=${indice}>
-        <span class="form-check-label">${Text}</span>
-    </div>
-        <button class="bi bi-x-square-fill" data-indice=${indice}></button>      
-    `
-    document.getElementById('ItemList').appendChild(item)
+
+    if(Text!=""){
+        item.innerHTML=` 
+        <div class="form-switch">
+            <input class="check form-check-input" type="checkbox" ${Status} data-indice=${indice}>
+            <span class="form-check-label">${Text}</span>
+        </div>
+            <button class="bi bi-x-square-fill" data-indice=${indice}></button>      
+        `
+        document.getElementById('ItemList').appendChild(item)
+    }
 
 }
 
