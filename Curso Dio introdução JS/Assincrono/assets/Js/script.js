@@ -12,18 +12,12 @@ const imgDogs = async()=>{
 
 
 // const imgDogs = async()=>{
-
 //     try{   
-
 //         const getDogs=await fetch(Base_Url);
 //         const json=await getDogs.json();
-        
 //     return json.message;
-    
 //     }catch(e){
-
 //     console.log(e.message);
-
 //     }
 // }
 

@@ -48,16 +48,14 @@ function calculadora(){
             }  
             function novaOperação() {
                 let opcoes=prompt(`Deseja fazer outra operação ? \n 1 - Sim \n 2 - Não`)
-            if(opcoes==1) {
-                calculadora()
-            }
-            else if( opcoes==2){
-                alert('Até a proxima')
-            } else{
-                alert('Opção Ivalida')
-                novaOperação()
-            }
-        }
+                if(opcoes==1) {
+                    calculadora()
+                    }else if( opcoes==2){
+                    alert('Até a proxima');
+                    }else{
+                    alert('Opção Ivalida');
+                    }
+             }
     }
     
         // if(operacoes==1){
