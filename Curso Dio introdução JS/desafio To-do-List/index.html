@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="assets/style.css">
-
     <title>To-do-List</title>
 </head>
-        <div class="container">
-            <div class="row">                              
-                <div class="lista-input w-90">
-                    <div class="grupo input-group-prepend">
-                        <h1 class="title">To do List</h1>
-                        <div class="containerInput">
-                            <input id="input-text" placeholder="Insira suas Tarefas" class="form-control w-25  offset-4" >                        
-                            <button id="btn-enviar" type="submit" class="chek botao btn btn-primary">Click Aqui</button>
-                        </div>
-                    </div>                          
+    <body>
+        <div class="container">                   
+                <h1 class="title">To do List</h1>                                  
+            <div class="lista-input">
+                <div class="containerInput">
+                    <input id="input-text" autocomplete="off" placeholder="Insira suas Tarefas !!" class="input-text">                        
+                    <button  id="btn-enviar" type="submit" class="chek botao">Inserir</button>
                 </div>
-            </div>                                         
-            <div class="lista-tarefas w-50 offset-3" id="ItemList">
-            </div>  
+            </div>                          
+            <div class="lista-tarefas" id="ItemList"></div> 
         </div>  
-    <script src="assets/script.js"></script>
+        <script src="assets/script.js"></script>
     </body>
 </html>

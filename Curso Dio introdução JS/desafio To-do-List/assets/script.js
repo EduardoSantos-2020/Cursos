@@ -1,94 +1,69 @@
 
-    let Banco=[
-        {'tarefa':"Eduardo Santos",'Status':'checked'},
-]
-const criandoItem=(Text,Status="",indice)=>{
+let Banco = [{ 'tarefa': "Ir viajar 8hs", 'Status': 'checked' },];
 
-    const item=document.createElement('label');
+const criandoItem = (Text, Status = "", indice) => {
+    const item = document.createElement('label');
     item.classList.add('Itemcheck');
+    item.innerHTML = `<div class="form-switch">
+                        <div class="container-check">
+                            <input class="check" type="checkbox" ${Status} data-indice=${indice}>
+                            <span class="checkmark"></span>
+                            <span class="form-check-label">${Text}</span> 
+                        </div>
+                    </div>
+                    <button class="bi bi-x-square-fill" data-indice=${indice}></button> `
 
-    if(Text!=""){
-        item.innerHTML=` 
-        <div class="form-switch">
-            <input class="check form-check-input" type="checkbox" ${Status} data-indice=${indice}>
-            <span class="form-check-label">${Text}</span>
-        </div>
-            <button class="bi bi-x-square-fill" data-indice=${indice}></button>      
-        `
-        document.getElementById('ItemList').appendChild(item)
-    }
-
+    document.getElementById('ItemList').appendChild(item);
 }
 
 
-const limparTela=()=>{
-let Tolist=document.getElementById('ItemList');
-    while(Tolist.firstChild){
+const limparTela = () => {
+    let Tolist = document.getElementById('ItemList');
 
-        Tolist.removeChild(Tolist.lastChild)
+    while (Tolist.firstChild) {
+        Tolist.removeChild(Tolist.lastChild);
     }
 }
-const atualizandoTela=()=>{
+
+const atualizandoTela = () => {
     limparTela()
-    Banco.forEach((item,indice)=>criandoItem(item.tarefa,item.Status,indice))
-
-
+    Banco.forEach((item, indice) => criandoItem(item.tarefa, item.Status, indice))
+}
+const adicionarItemBanco = (evento) => {
+    InputTexto = document.querySelector('#input-text');
+    
+    if (InputTexto.value > " " && evento.type === "click") {
+        Banco.push({ 'tarefa': InputTexto.value, 'Status': '' });
+        InputTexto.value='';
+        InputTexto.placeholder='Insira Mais Tarefas !!';
+    }
+    atualizandoTela();
 }
 
-const adicionarItemBanco=(evento)=>{
-    
-    InputTexto=document.querySelector('#input-text')
-
-    teclado=evento.type
-
-    if(teclado === "click"){
- 
-        Banco.push({'tarefa':InputTexto.value,'Status':''})
-
-        InputTexto.value=" ";
-
-        atualizandoTela()      
-    }  
-}
-
-const ClickCadaItem=(evento)=>{
-
-    const itemElemento=evento.target
-
-    
-    if(itemElemento.type === 'submit'){
-
-        const indiceElement = itemElemento.dataset.indice
-
-
+const ClickCadaItem = (evento) => {
+    const itemElemento = evento.target
+    if (itemElemento.type === 'submit') {
+        const indiceElement = itemElemento.dataset.indice;
         removeItemBanco(indiceElement)
-        
         atualizandoTela()
-
-        }else if(itemElemento.type === 'checkbox'){
-
-            const checkboxElement = itemElemento.dataset.indice
-
-            marcaCheckbox(checkboxElement)
-
-        }
+    } else if (itemElemento.type === 'checkbox') {
+        const checkboxElement = itemElemento.dataset.indice
+        marcaCheckbox(checkboxElement)
+    }
 }
 
-const removeItemBanco=(indice)=>{
-    Banco.splice(indice,1)
+const removeItemBanco = (indice) => {
+    Banco.splice(indice, 1)
     atualizandoTela()
 }
 
-const marcaCheckbox=(indice)=>{
-
-    Banco[indice].Status=Banco[indice].Status === ' ' ? 'checked' :' ';
-
+const marcaCheckbox = (indice) => {
+    Banco[indice].Status = Banco[indice].Status === ' ' ? 'checked' : ' ';
     atualizandoTela()
 }
 
-
-document.querySelector('#btn-enviar').addEventListener('click',adicionarItemBanco)
-document.querySelector('#ItemList').addEventListener('click',ClickCadaItem)
+document.querySelector('#btn-enviar').addEventListener('click', adicionarItemBanco)
+document.querySelector('#ItemList').addEventListener('click', ClickCadaItem)
 atualizandoTela()
 
 
