@@ -35,7 +35,7 @@ const adicionarItemBanco = (evento) => {
     if (InputTexto.value > " " && evento.type === "click") {
         Banco.push({ 'tarefa': InputTexto.value, 'Status': ' ' });
         InputTexto.value = '';
-        InputTexto.placeholder = 'Insira Mais Tarefas !!';
+        InputTexto.placeholder = 'Qual é sua tarefa !!';
     }
     atualizandoTela();
 }
