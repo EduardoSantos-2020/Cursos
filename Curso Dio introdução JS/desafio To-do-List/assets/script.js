@@ -1,5 +1,5 @@
 
-let Banco = [{ 'tarefa': 'Ir Estudar as 8 horas','Status':'checked'},];
+let Banco = [{ 'tarefa': 'Ir Estudar as 8 horas', 'Status': 'checked' },];
 
 const criandoItem = (Text, Status = "", indice) => {
     const item = document.createElement('label');
@@ -11,7 +11,7 @@ const criandoItem = (Text, Status = "", indice) => {
                             <span class="form-check-label">${Text}</span> 
                         </div>
                     </div>
-                    <button class="bi bi-x-square-fill" data-indice=${indice}></button> `
+                    <button type='button' class="bi bi-x-square-fill" data-indice=${indice}></button>`
 
     document.getElementById('ItemList').appendChild(item);
 }
@@ -31,27 +31,26 @@ const atualizandoTela = () => {
 }
 const adicionarItemBanco = (evento) => {
     InputTexto = document.querySelector('#input-text');
-    
+
     if (InputTexto.value > " " && evento.type === "click") {
-        Banco.push({ 'tarefa': InputTexto.value, 'Status':' ' });
-        InputTexto.value='';
-        InputTexto.placeholder='Insira Mais Tarefas !!';
+        Banco.push({ 'tarefa': InputTexto.value, 'Status': ' ' });
+        InputTexto.value = '';
+        InputTexto.placeholder = 'Insira Mais Tarefas !!';
     }
     atualizandoTela();
 }
 
 const ClickCadaItem = (evento) => {
 
-    if (evento.target.tagName === 'BUTTON') {
-
+    if (evento.target.type === 'button') {
         const indiceElement = evento.target.dataset.indice;
         removeItemBanco(indiceElement)
         atualizandoTela()
-
-    } else if (evento.target.type === 'checkbox') {
+    }else if(evento.target.type === 'checkbox') {
         const checkboxElement = evento.target.dataset.indice
         marcaCheckbox(checkboxElement)
     }
+
 }
 
 const removeItemBanco = (indice) => {
@@ -60,7 +59,7 @@ const removeItemBanco = (indice) => {
 }
 
 const marcaCheckbox = (indice) => {
-    Banco[indice].Status = Banco[indice].Status == ' ' ? 'checked' :' ';
+    Banco[indice].Status = Banco[indice].Status == ' ' ? 'checked' : ' ';
     atualizandoTela()
 }
 
