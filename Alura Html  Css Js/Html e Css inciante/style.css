@@ -35,7 +35,9 @@ nav a:hover{
 }
 
 
-.produtos{ width: 940px;
+.produtos{ 
+width: 940px;
+height: 70vh;
 margin: 0 auto ;
 padding: 50px 0
 }
@@ -48,21 +50,20 @@ width:30%;
 margin: 0 1.5%;
 padding: 30px 20px;
 box-sizing: border-box;
-border:2px solid #000000;
-border-radius: 10px}
+border:2px solid #000;
+border-radius: 10px
+}
 
 .produtos li:hover{border-color:#C78C19 }
 
 .produtos li:active {border-color: #088C19}
 
-.produtos li:hover h2{font-size: 34px
-}
+.produtos li:hover h2{font-size: 34px}
 
 .produtos h2{font-size: 30px;font-weight: bold
 }
 
-.descricao{font-size: 18px 
-}
+.descricao{font-size: 18px}
 
 .preço{ font-size: 22px;font-weight: bold;margin-top: 10px
 }
@@ -134,12 +135,14 @@ table{margin: 60px 10em;
 }
 
 
-thead{background: #555555;
+thead{
+background: #555555;
 color:white;
 font-weight: bold;
 }
 
-td,th { border: 1px solid #000000;
+td,th { 
+border: 1px solid #000000;
 padding: 8px 15px
 }
 
@@ -157,7 +160,8 @@ margin: 0 0 1em;
 clear: left;
 }
 
-.principal{width: 940px;
+.principal{
+width: 940px;
 margin: 0 auto; 
 padding: 2em;
 background: #FEFEFE;
@@ -289,8 +293,14 @@ margin:2em 3em;
 
 /*PRODUTOS*/
 
+main{
+	width: 100%;
+
+}
 .produtos{
 display: inline-block;
+width: 100%;
+height: 100%;
 }
 
 .produtos li {

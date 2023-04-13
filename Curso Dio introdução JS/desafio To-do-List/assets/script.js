@@ -1,5 +1,5 @@
 
-let Banco = [{ 'tarefa': "Ir viajar 8hs", 'Status': 'checked' },];
+let Banco = [{ 'tarefa': 'Ir Estudar as 8 horas','Status':'checked'},];
 
 const criandoItem = (Text, Status = "", indice) => {
     const item = document.createElement('label');
@@ -33,7 +33,7 @@ const adicionarItemBanco = (evento) => {
     InputTexto = document.querySelector('#input-text');
     
     if (InputTexto.value > " " && evento.type === "click") {
-        Banco.push({ 'tarefa': InputTexto.value, 'Status': '' });
+        Banco.push({ 'tarefa': InputTexto.value, 'Status':' ' });
         InputTexto.value='';
         InputTexto.placeholder='Insira Mais Tarefas !!';
     }
@@ -41,13 +41,15 @@ const adicionarItemBanco = (evento) => {
 }
 
 const ClickCadaItem = (evento) => {
-    const itemElemento = evento.target
-    if (itemElemento.type === 'submit') {
-        const indiceElement = itemElemento.dataset.indice;
+
+    if (evento.target.tagName === 'BUTTON') {
+
+        const indiceElement = evento.target.dataset.indice;
         removeItemBanco(indiceElement)
         atualizandoTela()
-    } else if (itemElemento.type === 'checkbox') {
-        const checkboxElement = itemElemento.dataset.indice
+
+    } else if (evento.target.type === 'checkbox') {
+        const checkboxElement = evento.target.dataset.indice
         marcaCheckbox(checkboxElement)
     }
 }
@@ -58,7 +60,7 @@ const removeItemBanco = (indice) => {
 }
 
 const marcaCheckbox = (indice) => {
-    Banco[indice].Status = Banco[indice].Status === ' ' ? 'checked' : ' ';
+    Banco[indice].Status = Banco[indice].Status == ' ' ? 'checked' :' ';
     atualizandoTela()
 }
 
