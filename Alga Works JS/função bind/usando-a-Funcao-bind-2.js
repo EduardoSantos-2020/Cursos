@@ -1,4 +1,4 @@
-Estado = (function(){
+Estado=(function(){
     function Estado(){
         this.comboEstado=$('#combo-estado')
         
@@ -16,8 +16,8 @@ Estado.prototype.iniciar=function(){
 function onestadosretornados(estados){
            this.comboEstado.html('<option>selecionar estados</option>')
            estados.forEach(function(estado){
-           opitionEstado=$('<option>').val( estado.ul).text(estado.nome)
-           this.comboEstado.append(opitionEstado);
+           optionEstado=$('<option>').val( estado.ul).text(estado.nome)
+           this.comboEstado.append(optionEstado);
             }.bind(this));
        }
        function onerror(){

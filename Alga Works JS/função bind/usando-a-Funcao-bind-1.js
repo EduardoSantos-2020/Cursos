@@ -16,8 +16,8 @@
         function onestadosretornados(estados){
             comboEstado.html('<option>selecionar estados</option>')
             estados.forEach(function(estado){
-            opitionEstado=$('<option>').val( estado.ul).text(estado.nome)
-            comboEstado.append(opitionEstado);
+            optionEstado=$('<option>').val( estado.ul).text(estado.nome)
+            comboEstado.append(optionEstado);
              });
         }
         function onerror(){

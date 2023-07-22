@@ -7,51 +7,67 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
           <style>
            body{
-        padding: 20px;
-    
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
             }
-            .estilizar{color:darkturquoise
+            .estilizar{
+                color:blue;
+            }
+            table{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+            }
 
+            thead{
+                font-size: 2.9em;
+                
+            }
+            tbody{
+                font-size: 2.5em;
+            }
+             th,td{
+                padding:5px 10px;
+            }
+            
+            input[type='checkbox']{
+                width: .8em;
+                height:.8em;
             }
 
-            th,td{
-            padding-right: 20px ;
-            }
         </style> 
     </head>
     <body>
+    <table>
         <thead>
-            <table>
             <tr>
                 <th><input type="checkbox" id="selecao-de-todos-email"></th>
                 <th>Nome</th>
                 <th>E-mail</th>
             </tr>
-            </table>
         </thead>
         <tbody>
-            <table>
-                <tr>
-                    <td><input type="checkbox"class="selecionar-usuarios"></td>
-                    <td>Felipe</td>
-                    <td>felipe@email.com</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td><input type="checkbox"class="selecionar-usuarios"></td>
-                    <td>Geovana</td>
-                    <td>geovana@email.com</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td ><input type="checkbox"class="selecionar-usuarios"></td>
-                    <td>Carlos</td>
-                    <td>carlos@email.com</td>
-                </tr>
-            </table>
-        </tbody>
+            <tr>
+                <td><input type="checkbox"class="selecionar-usuarios"></td>
+                <td>Felipe</td>
+                <td>felipe@email.com</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"class="selecionar-usuarios"></td>
+                <td>Geovana</td>
+                <td>geovana@email.com</td>
+            </tr>
+            <tr>
+                <td ><input type="checkbox"class="selecionar-usuarios"></td>
+                <td>Carlos</td>
+                <td>carlos@email.com</td>
+            </tr>
+        </tbody> 
+    </table>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="seleção.js"></script>
     </body>

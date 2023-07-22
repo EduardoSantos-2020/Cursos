@@ -8,8 +8,8 @@ $(function(){
         comboEstado=$('#combo-estado');
         comboEstado.html('<option>selecionar estados</option>');
             estado.forEach(function(estado){
-                 opitionEstado=$('<option>').val( estado.uf).text(estado.nome)
-                 comboEstado.append(opitionEstado);
+                 optionEstado=$('<option>').val( estado.uf).text(estado.nome)
+                 comboEstado.append(optionEstado);
                 });
     })
     resposta.fail(function(){
