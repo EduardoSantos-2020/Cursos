@@ -111,6 +111,7 @@ body {
   background-color: #ffff;
   padding: .2rem .4rem;
   border-radius: .2rem;
+  cursor: pointer;
   margin: 0;
   border: none;
   z-index: 1;
@@ -132,7 +133,7 @@ body {
 }
 
 .text-list {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: bolder;
   padding: 0;
   margin: 0;
@@ -144,11 +145,11 @@ body {
 
 .container-check {
   position: relative;
-
+cursor:pointer;
 }
 
 .checkmark {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 1.2rem;
