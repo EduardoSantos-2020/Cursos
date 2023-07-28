@@ -1,30 +1,39 @@
 0
-let Banco = [{ 'tarefa': 'Estudar as 8 horas da manhã', 'Status': 'checked' },];
+let Banco = [{ 'tarefa': 'Estudar as 8 horas da manhã', 'Status': true, }];
 
-const criandoItem = (Text, Status = ' ', indice) => {
-    let item = document.createElement('div')
+const criandoItem = (Text, indice) => {
+    let item = document.createElement('div');
     item.classList.add('Itemcheck');
-    item.innerHTML = `<label class="container-check">
-                        <input class="check" type=checkbox ${Status} data-indice=${indice}>
-                        <div class="checkmark"></div>
-                    </label>
-                    <div class="container-text">
-                        <p class="text-list" data-indice=${indice}>${Text}</p>
-                    </div>
-                    <button type="button" class="fa-solid fa-xmark" data-indice=${indice} ></button>`;
 
+    let contCheck = document.createElement('label');
+    contCheck.classList.add('container-check');
+
+    let inputCheck = document.createElement('input');
+    inputCheck.classList.add('check');
+    inputCheck.setAttribute('type', 'checkbox');
+    inputCheck.setAttribute('data-indice', indice);
+
+    customCheck = document.createElement('div');
+    customCheck.classList.add('checkmark');
+    contCheck.append(inputCheck, customCheck);
+
+    containerText = document.createElement('div');
+    containerText.classList.add('container-text');
+
+    text = document.createElement('p');
+    text.classList.add('text-list');
+    text.setAttribute('data-indice', indice);
+    text.textContent = Text;
+    containerText.append(text);
+
+    button = document.createElement('button');
+    button.setAttribute('type', 'button');
+    button.classList.add('fa-solid');
+    button.classList.add('fa-xmark');
+    button.setAttribute('data-indice', indice);
+
+    item.append(contCheck, containerText, button);
     document.getElementById('ItemList').appendChild(item);
-
-    itemBox = document.querySelectorAll('.check')[indice];
-
-    label = document.getElementsByClassName('text-list')[indice]
-
-    if (itemBox.checked) {
-        label.style.textDecoration = 'line-through';
-    } else {
-        label.style.textDecoration = 'none';
-    }
-
 }
 
 
@@ -38,20 +47,20 @@ const limparTela = () => {
 
 const atualizandoTela = () => {
     limparTela()
-    Banco.forEach((item, indice) => criandoItem(item.tarefa, item.Status, indice));
+    Banco.forEach((item, indice) => criandoItem(item.tarefa, indice))
+    Banco.forEach((itemBox, i) => marcaCheckbox(itemBox, i))
 }
 const adicionarItemBanco = (evento) => {
     InputTexto = document.querySelector('#input-text');
 
     if (InputTexto.value > " " && evento.type === "click") {
 
-        Banco.push({ 'tarefa': InputTexto.value, 'Status': ' ' });
+        Banco.push({ 'tarefa': InputTexto.value, "Status": false });
         InputTexto.value = '';
         InputTexto.placeholder = 'Qual é sua tarefa !!';
     }
     atualizandoTela();
 }
-
 
 const ClickCadaItem = (evento) => {
 
@@ -59,13 +68,11 @@ const ClickCadaItem = (evento) => {
         const indiceElement = evento.target.dataset.indice;
         removeItemBanco(indiceElement)
         atualizandoTela()
-
-    } else if (evento.target.type === 'checkbox') {
-        const checkboxElement = evento.target.dataset.indice;
-        marcaCheckbox(checkboxElement);
-        atualizandoTela()
     }
-
+    else if (evento.target.type === 'checkbox') {
+        const checkboxElement = evento.target.dataset.indice;
+        verificarCheckbox(checkboxElement)
+    }
 }
 
 const removeItemBanco = (indice) => {
@@ -73,14 +80,29 @@ const removeItemBanco = (indice) => {
     atualizandoTela()
 }
 
-const marcaCheckbox = (indice) => {
-    Banco[indice].Status = Banco[indice].Status == ' ' ? 'checked' : ' ';
+
+const verificarCheckbox = (indice) => {
+    Banco[indice].Status = Banco[indice].Status == false ? true : false;
     atualizandoTela()
 }
 
-atualizandoTela()
-document.querySelector('#ItemList').addEventListener('click', ClickCadaItem)
-document.querySelector('#btn-enviar').addEventListener('click', adicionarItemBanco)
+const marcaCheckbox = (itemBox, i) => {
+    let label = document.getElementsByClassName('text-list')[i];
+    let checkbox = document.querySelectorAll('.check')[i];
+
+    if (itemBox.Status == true) {
+        checkbox.checked = true;
+        label.style.textDecoration = 'line-through';
+    } else {
+        checkbox.checked = false;
+        label.style.textDecoration = 'none';
+    }
+}
+
+atualizandoTela();
+
+document.querySelector('#btn-enviar').addEventListener('click', adicionarItemBanco);
+document.querySelector('#ItemList').addEventListener('click', ClickCadaItem);
 
 
 
