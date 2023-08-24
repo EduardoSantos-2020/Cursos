@@ -13,26 +13,29 @@ const criandoItem = (Text, indice) => {
     inputCheck.setAttribute('type', 'checkbox');
     inputCheck.setAttribute('data-indice', indice);
 
-    customCheck = document.createElement('div');
+    let customCheck = document.createElement('div');
     customCheck.classList.add('checkmark');
+
     contCheck.append(inputCheck, customCheck);
 
-    containerText = document.createElement('div');
+    let containerText = document.createElement('div');
     containerText.classList.add('container-text');
 
-    text = document.createElement('p');
+    let text = document.createElement('p');
     text.classList.add('text-list');
     text.setAttribute('data-indice', indice);
     text.textContent = Text;
+
     containerText.append(text);
 
-    button = document.createElement('button');
+    let button = document.createElement('button');
     button.setAttribute('type', 'button');
     button.classList.add('fa-solid');
     button.classList.add('fa-xmark');
     button.setAttribute('data-indice', indice);
 
     item.append(contCheck, containerText, button);
+    
     document.getElementById('ItemList').appendChild(item);
 }
 
