@@ -5,7 +5,6 @@ const imgDogs = async()=>{
     const data=await fetch(Base_Url)
     .then((res)=>res.json())
     .catch((e)=>console.log(e))
-        
     return data.message;
     
 }

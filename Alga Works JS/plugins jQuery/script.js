@@ -7,6 +7,8 @@ $(function(){
     thousands:'.',
     prefix:'R$ ',
     }
+
+    valorElement.maskMoney(mascaraConfig)
     
     valorElement.on('keyup',function(){
         
@@ -26,7 +28,6 @@ $(function(){
             resultado=valor;   
         } 
         
-        valorElement.maskMoney(mascaraConfig);
         totalresultado.maskMoney('mask',resultado);
         totalresultado.maskMoney(mascaraConfig);
         resulElement.innerHTML=totalresultado.val();
